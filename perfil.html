@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de usuário</title>
+    <link rel="stylesheet" href="css/perfil.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <button class="burger material-symbols-outlined">menu</button>
+
+    <button class="burger" onclick="toggleMenu()"></button>
+    <div class="background"></div>
+    <div class="menu">
+      <nav>
+        <a style="animation-delay: 0.2s">autoajuda</a>
+        <a style="animation-delay: 0.3s">conto</a>
+        <a style="animation-delay: 0.4s">ficção científica</a>
+        <a style="animation-delay: 0.5s">LGBTQIA+</a>
+        <a style="animation-delay: 0.6s">romance</a>
+        <a style="animation-delay: 0.7s">suspense</a>
+        <a style="animation-delay: 0.8s">tecnologia e ciência</a>
+        <a style="animation-delay: 0.9s" href="terror.html">terror</a>
+      </nav>
+    </div>
+    <script type="text/javascript">
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+
+
+<div class="logo">
+    <img src="logo.svg" />
+  </div>
+  <div class="center">
+    <div class="search">
+      <input
+        spellcheck="false"
+        type="text"
+        class="search"
+        id="search"
+        placeholder="Search"/>
+      <button class="material-symbols-outlined">search</button>
+
+    </div>
+  </div>
+  <nav>
+    <button class="material-symbols-outlined">search</button>
+
+    <a-2 href="status.html"><i class='bx bx-package' id="box-icon"></i></a>
+
+    <a-2 href="carrinho.html"><i class='bx bx-shopping-bag ' id="bag-icon"></i></a>
+    </button>
+    <a-2 href="login.html"><img src="assets/imgs/user3.png" /></a>
+  </nav>
+</nav>
+
+
+    <section class="seccion-perfil-usuario">
+        <div class="perfil-usuario-header">
+            <div class="perfil-usuario-portada">
+                <div class="perfil-usuario-avatar">
+                    <img src="imgs/usericon.png" alt="img-avatar">
+                    <button type="button" class="boton-avatar">
+                        <i class="far fa-image"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="perfil-usuario-body">
+            <div class="perfil-usuario-bio">
+                <h3 class="titulo">Juju Swift</h3>
+            </div>
+            <div class="perfil-usuario-footer">
+                <form id="profileForm">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" value="Juju Swift" readonly>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" value="juju@example.com" readonly>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" value="123.456.789-00" readonly>
+                    <label for="address">Endereço:</label>
+                    <input type="text" id="address" name="address" value="Rua das Livrarias, 123" readonly>
+                    <label for="birthdate">Data de Nascimento:</label>
+                    <input type="text" id="birthdate" name="birthdate" value="01/01/1990" readonly>
+                  </form>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+
+</html>
